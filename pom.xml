@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sun.javax</groupId>
+    <artifactId>jms</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- Java Message Service jms1.1规范api，类似于jdbc规范api，具体由第三方厂商实现 -->
+        <!-- <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>jms</artifactId>
+            <version>1.1</version>
+        </dependency>-->
+
+        <!-- activemq-all里包含了jms api的源码和其他开源框架的源码,jms一个强大的开源实现，类似于jdbc的驱动包，
+        用于连接activemq并传输数据，而activemq类似数据库mysql -->
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+            <version>5.15.9</version>
+        </dependency>
+
+        <!--
+                类比关系：
+                jms                    jdbc
+                activemq-all.jar       mysql-connector-java.jar
+                activeMQ               mysql 数据库
+                spring-jms             spring-jdbc
+         -->
+
+
+    </dependencies>
+
+
+</project>
